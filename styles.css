@@ -1,0 +1,87 @@
+/* using the Universal selector to 
+override the default styles */
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+header {
+	background-color: gray;
+    padding: 20px 40px;
+}
+header h1{
+    color:orange;
+}
+#main_section{
+    margin-top: 150px;
+}
+section {
+	padding: 20px 30px;
+}
+
+nav > ul {
+	width: 300px;
+	list-style: none;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+nav ul > li a {
+	text-decoration: none;
+	color: inherit;
+}
+nav ul > li a:hover {
+	color: orange;
+	font-size: 22px;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.align_items {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	font-size: 20px;
+}
+.margin_bottom {
+	margin-bottom: 30px;
+}
+
+#lists-section {
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.line_height {
+	line-height: 25px;
+	font-size: 18px;
+}
+#separator {
+	width: 3px;
+	height: 200px;
+	background-color: teal;
+	border-radius: 30px;
+}
+#images_section {
+    margin-top: 30px;
+    width:80%;
+	/* width:100%; */
+}
+img {
+	width: 251px;
+	height: 249px;
+	padding: 20px;
+}
+#image {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#footer {
+	width: 90%;
+	padding: 30px;
+	border-top: 1px solid gray;
+}
